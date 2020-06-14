@@ -122,6 +122,71 @@ label altera:
         "I want to talk about something else.":
             jump somethingElse
 
+label education:
+    show kate happy
+    k """I started at Memorial University of Newfoundland in the fall of 2014. 
+
+    I was originally in the Computer Engineering program, which is why I was able to do the internships. 
+
+    After a while I found out that it wasn't for me. It wasn't teaching me the software skills I needed to move my career in the direction I wanted. So, I switched to Computer Science."""
+    menu:
+        "What should I ask them about next?"
+        "Their favourite class":
+            jump faveClass
+        "If they did any projects":
+            jump project
+        "I want to talk about something else.":
+            jump somethingElse
+
+label faveClass:
+    c "What was your favourite class?"
+    show kate thinking
+    k """My favourite class was probably the swarm robotics class.
+
+    There were too many students and not enough funding to work with {i}actual robots{/i}, so we worked in simulation instead."""
+    show kate happy
+    k """But it was still really cool.
+
+    Basically, we'd program a bunch of little \"robots\" with simple behaviours, and when a whole bunch of them were set loose with the same program, there were emergent behaviours that let them complete tasks as a group!
+
+    One robot might only be able to pick up an object and wander aimlessly until it found another object of the same colour, but a swarm of robots doing that could tidy up and sort a whole field of objects."""
+    menu:
+        "What should I ask them about next?"
+        "If they did any projects":
+            jump project
+        "I want to talk about something else":
+            jump somethingElse
+
+label project:
+    c "Did you do any interesting class projects?"
+    show kate happy
+    k """Oh yeah!
+
+    I'd say the coolest one was for a game programming class, where me and my friend Garrett got to build a basic game engine from scratch over the course of the semester.
+
+    By the end, we had a fully-functioning platformer, kind of like Super Mario. It had a level editor and everything!"""
+    menu:
+        "What should I ask them about next?"
+        "Their favourite class":
+            jump faveClass
+        "I want to talk about something else":
+            jump somethingElse
+
+label somethingElse:
+    c "Let's talk about something else."
+    k "Ok, what do you wanna talk about?"
+    menu:
+        "I should ask them about..."
+        "Their work history":
+            jump work
+        "Their education":
+            jump education
+        "How they spend their spare time":
+            jump spareTime
+        "Why they're interested in Jonar":
+            jump Jonar
+        "I'm done chatting":
+            jump thankYou
 
 return
 
