@@ -14,7 +14,7 @@ label start:
 
     scene bg room
 
-    show Kate happy
+    show kate happy
 
     k "Hi! You must be Celine. I'm Kate."
     k "It's nice to meet you!"
@@ -34,7 +34,7 @@ label start:
 
 label work:
     c "Tell me about your work history."
-    show Kate thinking
+    show kate thinking
     k """I've had four internships.
     
     The most recent one was with other Ocean Interactive, a game studio.
@@ -43,7 +43,7 @@ label work:
     
     My first two internships were with Altera, who were bought out by Intel while I worked there, testing FPGA chips for telecom."""
 
-    show Kate happy
+    show kate happy
     menu:
         k "Which one do you wanna hear more about?"
         "Other Ocean":
@@ -57,17 +57,17 @@ label work:
 
 label otherOcean:
     c "What did you do at Other Ocean?"
-    show Kate happy
+    show kate happy
     k """I worked on a mobile game called Super Samurai Rampage, which we designed for both Android and iOS.
 
     I also helped port it to {a=https://store.steampowered.com/app/675030/Super_Samurai_Rampage/}Steam!{/a}
 
     As it was a small team, I got to experience a lot of different facets of game development, from design and prototyping to building the product, to testing and debugging, to porting it to different platforms."""
     
-    show Kate thinking
+    show kate thinking
     k "I primarily used C# and Unity at Other Ocean. \nI also worked with the Steam and Google Play APIs to build the achievement and leaderboard systems."
     k "I was really proud of my work here.{nw}"
-    show Kate happy
+    show kate happy
     k "I was really proud of my work here.{fast} It was awesome to be able to put my name on a finished, user-focused product!"
     menu:
         "What should I ask them about next?"
@@ -80,13 +80,13 @@ label otherOcean:
 
 label windRiver:
     c "What was your work with Wind River like?"
-    show Kate happy
+    show kate happy
     k """At Wind River, I worked with a team building Linux operating system for cloud servers.
 
     Personally, I worked on automated testing, and integrating an older, stagnate system into their upgraded primary system.
 
     I wrote test cases in C++, debugged automation scripts in Python and Bash, and did integration work in C++ and Python."""
-    show Kate thinking
+    show kate thinking
     k """Unfortunately, when it came to the integration job, the new system had been upgraded so far and gotten so complex that I wasn't able to successfully integrate them in my short time there.
 
     But it was a really fun challenge and I feel like I got it a lot closer than when it started."""
@@ -103,7 +103,7 @@ label windRiver:
 label altera:
     c "What was working at Intel like? And... Altera?"
 
-    show Kate happy
+    show kate happy
     k """Altera got bought out by Intel during my first term work term with them and they were in the process of integration during my second one.
 
     So my first internship was at Altera. I was super green, didn't know much about anything just yet!
