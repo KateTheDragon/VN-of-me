@@ -4,6 +4,7 @@
 # name of the character.
 
 define k = Character("Kate")
+define K = Character('Kate', kind=nvl)
 define c = Character("You")
 
 # The game starts here.
@@ -378,25 +379,16 @@ label somethingElse:
         "Why they're interested in Jonar":
             jump jonar
         "I'm done":
-            jump thankYou
+            jump end
 
-label thankYou:
-    c "Thank you for your time."
-    show kate happy
-    k """No, thank you! 
-
-    I'm glad we got this opportunity to chat! I hope to see you again soon. 
-
-    Bye!"""
-    c "Bye!"
+label end:
     menu:
         "Contact info":
             jump contact
         "Credits":
             jump credits
-        "End":
-            jump end
-# TODO: put in contact info and credits
+        "Quit":
+            jump thankYou
 
 label credits:
     scene black
@@ -410,7 +402,29 @@ label credits:
     with Pause(3.5)
 
 label contact:
+    scene bg room
 
-label end:
+    show kate happy at left
+
+    K "You can reach me by phone at (709) 763 1266"
+    K "By email at petersonkatec@gmail.com"
+    K "Or by carrier pigeon at -"
+    K "Wait, do people still use those?"
+    nvl clear
+    menu:
+        "Credits":
+            jump credits
+        "Quit":
+            jump thankYou
+
+label thankYou:
+    c "Thank you for your time."
+    show kate happy at center
+    k """No, thank you! 
+
+    I'm glad we got this opportunity to chat! I hope to see you again soon. 
+
+    Bye!"""
+    c "Bye!"
 return
 
