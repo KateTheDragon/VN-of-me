@@ -400,6 +400,11 @@ label credits:
     with Pause(30.0)
     show text ("{color=#fff}{size=80}Based on a true story: the life of Kate Peterson") at truecenter with dissolve
     with Pause(3.5)
+    menu:
+        "Contact info":
+            jump contact
+        "Quit":
+            jump thankYou
 
 label contact:
     scene bg room
@@ -419,7 +424,7 @@ label contact:
 
 label thankYou:
     c "Thank you for your time."
-    show kate happy at center
+    show kate happy at center with move
     k """No, thank you! 
 
     I'm glad we got this opportunity to chat! I hope to see you again soon. 
@@ -427,4 +432,3 @@ label thankYou:
     Bye!"""
     c "Bye!"
 return
-
