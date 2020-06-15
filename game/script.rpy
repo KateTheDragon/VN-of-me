@@ -235,6 +235,7 @@ label dndWarn:
 
 label dnd:
     c "Lay it on me."
+    # TODO: make this auto-go and extra fast
     show kate happy
     k """Ok so right now I'm in three games. 
 
@@ -388,6 +389,28 @@ label thankYou:
 
     Bye!"""
     c "Bye!"
+    menu:
+        "Contact info":
+            jump contact
+        "Credits":
+            jump credits
+        "End":
+            jump end
+# TODO: put in contact info and credits
 
+label credits:
+    scene black
+    with dissolve
+    show text ("{color=#fff}{size=80}Credits\n\n{size=40}Directed by\n{size=60}Kate Peterson\n\n{size=40}Music by\n{size=60}Erik Peterson\n\n{size=40}Produced by\n{size=60}Kate Peterson\n\n{size=40}Character Artist\n{size=60}Ashley Quirke\n\n{size=40}Written by\n{size=60}Kate Peterson\n\n{size=40}Background Artist\n{size=60}Undetermined\n\n{size=40}Programmed by\n{size=60}Kate Peterson\n\n{size=40}Moral support\n{size=60}Erik Peterson"):
+        anchor (0.5, 0.0)
+        pos (0.5, 1.0)
+        linear 30.0 yanchor 1.0 ypos 0.0
+    with Pause(30.0)
+    show text ("{color=#fff}{size=80}Based on a true story: the life of Kate Peterson") at truecenter with dissolve
+    with Pause(3.5)
+
+label contact:
+
+label end:
 return
 

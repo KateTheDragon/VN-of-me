@@ -29,7 +29,25 @@ define config.version = "1.0"
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
-define gui.about = _p("""
+define gui.about = _p("""A tiny game made by Kate Peterson for an application to Jonar Systems. 
+
+Directed by: Kate Peterson
+
+Music by: Erik Peterson
+
+Produced by: Kate Peterson
+
+Character artist: Ashley Quirke
+
+Written by: Kate Peterson
+
+Background artist: Undetermined
+
+Programmed by: Kate Peterson
+
+Moral support: Erik Peterson
+
+Based on a true story: the life of Kate Peterson
 """)
 
 
@@ -119,7 +137,7 @@ define config.window_hide_transition = Dissolve(.2)
 ## Controls the default text speed. The default, 0, is infinite, while any other
 ## number is the number of characters per second to type out.
 
-default preferences.text_cps = 30
+default preferences.text_cps = 50
 
 
 ## The default auto-forward delay. Larger numbers lead to longer waits, with 0

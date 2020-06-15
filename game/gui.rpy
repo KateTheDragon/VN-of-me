@@ -12,6 +12,7 @@ init python:
     gui.init(1920, 1080)
 
 
+#TODO: fix menu font colour
 
 ################################################################################
 ## GUI Configuration Variables
