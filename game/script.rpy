@@ -174,7 +174,7 @@ label project:
 
 label spareTime:
     c "What do you do in your spare time?"
-    show Kate happy
+    show kate happy
     k """I'm so glad you asked!
 
     As you might guess from, uh, this, I enjoy gaming and dabbling in various creative hobbies like music and drawing.
@@ -195,7 +195,7 @@ label spareTime:
 
 label hobbies:
     c "Tell me more about your hobbies."
-    show Kate happy
+    show kate happy
     k """I'm pretty big into gaming. 
 
     When it comes to video games I like puzzle games like Portal and casual games like Pokemon Go. 
@@ -235,6 +235,7 @@ label dndWarn:
 
 label dnd:
     c "Lay it on me."
+    # TODO: make this auto-go and extra fast
     show kate happy
     k """Ok so right now I'm in three games. 
 
@@ -246,7 +247,7 @@ label dnd:
 
     She was hidden away as a child, and sent off to the Mages' Tower in the hopes that the world would forget about it. 
 
-    Her family refers to her being a tiefling as her "illness" or her "affliction". 
+    Her family refers to her being a tiefling as her \"illness\" or her \"affliction\". 
 
     Anywayy when her mother, the previous Lady Banefort, died unexpectedly, everyone expected Mara's younger brother Robin to take up the lordship but he was too noble for his own good and sought out Mara from her travels as a bard. 
 
@@ -321,7 +322,7 @@ label sandbox:
         "I want to talk about something else":
             jump somethingElse
 
-label gamejams:
+label gameJams:
     c "What did you do for the programming competitions?"
     show kate thinking
     k """In early 2018, I was part of the Atlantic Engineering Competition. 
@@ -353,15 +354,15 @@ label jonar:
     show kate happy
     k """The fact that this is an acceptable way to apply is certainly a pro. 
 
-    Like seriously, lots of employers like to say they're a {i}"fun place to work"{/i} but with you guys it actually seems true.
+    Like seriously, lots of employers like to say they're a {i}\"fun place to work\"{/i} but with you guys it actually seems true.
 
     Also basically everyone wants 3 or 5 or 10 years of experience in this economy, so I count myself lucky to have found a place like you that knows the value of a fast learner with a fresh brain!"""
     show kate thinking
     k """On top of that, I'm all about the user experience.
 
-    My main goal at the end of the day is to make software that's easy and enjoyable to use. 
-
-    I want to be proud of the work I've done and if people don't like using it, how can I claim I've helped make something good?"""
+    My main goal at the end of the day is to make software that's easy and enjoyable to use."""
+    show kate happy
+    k "I want to be proud of the work I've done and if people don't like using it, how can I claim I've helped make something good?"
 
 label somethingElse:
     c "Let's talk about something else."
@@ -375,7 +376,7 @@ label somethingElse:
         "How they spend their spare time":
             jump spareTime
         "Why they're interested in Jonar":
-            jump Jonar
+            jump jonar
         "I'm done":
             jump thankYou
 
@@ -388,6 +389,28 @@ label thankYou:
 
     Bye!"""
     c "Bye!"
+    menu:
+        "Contact info":
+            jump contact
+        "Credits":
+            jump credits
+        "End":
+            jump end
+# TODO: put in contact info and credits
 
+label credits:
+    scene black
+    with dissolve
+    show text ("{color=#fff}{size=80}Credits\n\n{size=40}Directed by\n{size=60}Kate Peterson\n\n{size=40}Music by\n{size=60}Erik Peterson\n\n{size=40}Produced by\n{size=60}Kate Peterson\n\n{size=40}Character Artist\n{size=60}Ashley Quirke\n\n{size=40}Written by\n{size=60}Kate Peterson\n\n{size=40}Background Artist\n{size=60}Undetermined\n\n{size=40}Programmed by\n{size=60}Kate Peterson\n\n{size=40}Moral support\n{size=60}Erik Peterson"):
+        anchor (0.5, 0.0)
+        pos (0.5, 1.0)
+        linear 30.0 yanchor 1.0 ypos 0.0
+    with Pause(30.0)
+    show text ("{color=#fff}{size=80}Based on a true story: the life of Kate Peterson") at truecenter with dissolve
+    with Pause(3.5)
+
+label contact:
+
+label end:
 return
 
