@@ -439,8 +439,8 @@ label end:
 
     scene black
     with dissolve
-    #CEO - me, caterer - Erik, lead/assistant programmer - me and me, pigeon tamer - me, correspondance expert - pigeon, chauffeur - Erik, creative consultants - Mara, Pom, Evie, Foggy, Sabina (fade them?)
-    show text ("{color=#fff}{size=80}Credits\n\n{size=40}Directed by\n{size=60}Kate Peterson\n\n{size=40}Music by\n{size=60}Erik Peterson\n\n{size=40}Produced by\n{size=60}Kate Peterson\n\n{size=40}Character Artist\n{size=60}Ashley Quirke\n\n{size=40}Written by\n{size=60}Kate Peterson\n\n{size=40}Background Artist\n{size=60}Undetermined\n\n{size=40}Programmed by\n{size=60}Kate Peterson\n\n{size=40}Moral support\n{size=60}Erik Peterson"):
+    # creative consultants - Mara, Pom, Evie, Foggy, Sabina (fade them?)
+    show text ("{color=#fff}{size=80}Credits\n\n{size=40}Director\n{size=60}Kate Peterson\n\n{size=40}Caterer\n{size=60}Erik Peterson\n\n{size=40}Producer\n{size=60}Kate Peterson\n\n{size=40}Character Artist\n{size=60}Ashley Quirke\n\n{size=40}Written by\n{size=60}Kate Peterson\n\n{size=40}Background Artist\n{size=60}afiniwind\n\n{size=40}Lead programmer\n{size=60}Kate Peterson\n\n{size=40}Music by\n{size=60}Erik Peterson\n\n{size=40}CEO\n{size=60}Kate Peterson\n\n{size=40}Chauffeur\n{size=60}Erik Peterson\n\n{size=40}Assistant Programmer\n{size=60}Kate Peterson\n\n{size=40}Correspondance expert\n{size=60}Harold J. Pigeon\n\n{size=40}Pigeon Tamer\n{size=60}Kate Peterson\n\n{size=40}Moral Support\n{size=60}Erik Peterson\n\n{size=40}Tech suppport\n{size=60}Kate Peterson\n\n"):
         anchor (0.5, 0.0)
         pos (0.5, 1.0)
         linear 60.0 yanchor 1.0 ypos 0.0

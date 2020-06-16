@@ -31,23 +31,13 @@ define config.version = "1.0"
 
 define gui.about = _p("""A tiny game made by Kate Peterson for an application to Jonar Systems. 
 
-Directed by: Kate Peterson
+Written, programmed, directed, and produced by: Kate Peterson
 
-Music by: Erik Peterson
+Music and moral support by Erik Peterson
 
-Produced by: Kate Peterson
+Background art by afiniwind
 
-Character artist: Ashley Quirke
-
-Written by: Kate Peterson
-
-Background artist: Undetermined
-
-Programmed by: Kate Peterson
-
-Moral support: Erik Peterson
-
-Based on a true story: the life of Kate Peterson
+Charaacter art by Ashley Quirke
 """)
 
 
