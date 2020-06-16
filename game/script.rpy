@@ -15,12 +15,14 @@ label start:
 
     scene bg room
 
-    show kate happy
+    show kate happy at left with moveinleft
 
     k "Hi! You must be Celine. I'm Kate."
     k "It's nice to meet you!"
+    show kate at center with move
     k "I'm so glad you could chat with me today."
 
+    show kate at left with move
     menu:
         "I should ask them about..."
         "Their work history":
@@ -35,7 +37,7 @@ label start:
 
 label work:
     c "Tell me about your work history."
-    show kate thinking
+    show kate thinking at center with move
     k """I've had four internships.
     
     The most recent one was with other Ocean Interactive, a game studio.
@@ -44,7 +46,7 @@ label work:
     
     My first two internships were with Altera, who were bought out by Intel while I worked there, testing FPGA chips for telecom."""
 
-    show kate happy
+    show kate happy at left with move
     menu:
         k "Which one do you wanna hear more about?"
         "Other Ocean":
@@ -58,7 +60,7 @@ label work:
 
 label otherOcean:
     c "What did you do at Other Ocean?"
-    show kate happy
+    show kate happy at center with move
     k """I worked on a mobile game called Super Samurai Rampage, which we designed for both Android and iOS.
 
     I also helped port it to {a=https://store.steampowered.com/app/675030/Super_Samurai_Rampage/}Steam!{/a}
@@ -70,6 +72,7 @@ label otherOcean:
     k "I was really proud of my work here.{nw}"
     show kate happy
     k "I was really proud of my work here.{fast} It was awesome to be able to put my name on a finished, user-focused product!"
+    show kate at left with move
     menu:
         "What should I ask them about next?"
         "Wind River":
@@ -81,7 +84,7 @@ label otherOcean:
 
 label windRiver:
     c "What was your work with Wind River like?"
-    show kate happy
+    show kate happy at center with move
     k """At Wind River, I worked with a team building Linux operating system for cloud servers.
 
     Personally, I worked on automated testing, and integrating an older, stagnate system into their upgraded primary system.
@@ -92,6 +95,7 @@ label windRiver:
 
     But it was a really fun challenge and I feel like I got it a lot closer than when it started."""
 
+    show kate at left with move
     menu:
         "What should I ask them about next?"
         "Other Ocean":
@@ -104,7 +108,7 @@ label windRiver:
 label altera:
     c "What was working at Intel like? And... Altera?"
 
-    show kate happy
+    show kate happy at center with move
     k """Altera got bought out by Intel during my first term work term with them and they were in the process of integration during my second one.
 
     So my first internship was at Altera. I was super green, didn't know much about anything just yet!
@@ -114,6 +118,8 @@ label altera:
     By the time my second internship rolled around, they were officially called Intel and I was more experienced. 
 
     I worked in simulation this time. I built a data frame that the full-timers could use to test FPGA embedded software."""
+    
+    show kate at left with move
     menu:
         "What should I ask them about next?"
         "Other Ocean":
@@ -124,12 +130,14 @@ label altera:
             jump somethingElse
 
 label education:
-    show kate thinking
+    show kate thinking at center with move
     k """I started at Memorial University of Newfoundland in the fall of 2014. 
 
     I was originally in the Computer Engineering program, which is why I was able to do the internships. 
 
     After a while I found out that it wasn't for me. It wasn't teaching me the software skills I needed to move my career in the direction I wanted. So, I switched to Computer Science."""
+    
+    show kate at left with move
     menu:
         "What should I ask them about next?"
         "Their favourite class":
@@ -141,7 +149,7 @@ label education:
 
 label faveClass:
     c "What was your favourite class?"
-    show kate thinking
+    show kate thinking at center with move
     k """My favourite class was probably the swarm robotics class.
 
     There were too many students and not enough funding to work with {i}actual robots{/i}, so we worked in simulation instead."""
@@ -151,6 +159,8 @@ label faveClass:
     Basically, we'd program a bunch of little \"robots\" with simple behaviours, and when a whole bunch of them were set loose with the same program, there were emergent behaviours that let them complete tasks as a group!
 
     One robot might only be able to pick up an object and wander aimlessly until it found another object of the same colour, but a swarm of robots doing that could tidy up and sort a whole field of objects."""
+    
+    show kate at left with move
     menu:
         "What should I ask them about next?"
         "If they did any projects":
@@ -160,12 +170,14 @@ label faveClass:
 
 label project:
     c "Did you do any interesting class projects?"
-    show kate happy
+    show kate happy at center with move
     k """Oh yeah!
 
     I'd say the coolest one was for a game programming class, where me and my friend Garrett got to build a basic game engine from scratch over the course of the semester.
 
     By the end, we had a fully-functioning platformer, kind of like Super Mario. It had a level editor and everything!"""
+    
+    show kate at left with move
     menu:
         "What should I ask them about next?"
         "Their favourite class":
@@ -175,14 +187,20 @@ label project:
 
 label spareTime:
     c "What do you do in your spare time?"
-    show kate happy
+    show kate happy at center with move
     k """I'm so glad you asked!
 
-    As you might guess from, uh, this, I enjoy gaming and dabbling in various creative hobbies like music and drawing.
+    As you might guess {nw}"""
+    show kate thinking
+    k "As you might guess {fast}from, uh, this, I enjoy {nw}"
+    show kate happy
+    k """As you might guess from, uh, this, I enjoy {fast}gaming and dabbling in various creative hobbies like music and drawing.
 
     I also like to volunteer. I spent several years volunteering with Sandbox Gaming, raising money for children's charities in St. John's, Newfoundland. I was the treasurer by the end of it! 
 
     I've also participated in a few game jams and other programming competitions."""
+    
+    show kate at left with move
     menu:
         "What should I ask them about next?"
         "Their hobbies":
@@ -196,7 +214,7 @@ label spareTime:
 
 label hobbies:
     c "Tell me more about your hobbies."
-    show kate happy
+    show kate happy at center with move
     k """I'm pretty big into gaming. 
 
     When it comes to video games I like puzzle games like Portal and casual games like Pokemon Go. 
@@ -209,6 +227,8 @@ label hobbies:
 
     I also dabble in creative hobbies. I draw and paint, and I play guitar, bass, and ukulele. I'm not particularly good at any of it, but I have fun anyway."""
 label hobbyMenu:
+
+    show kate at left with move
     menu:
         "What should I ask them about next?"
         "Their D&D characters":
@@ -237,62 +257,64 @@ label dndWarn:
 label dnd:
     c "Lay it on me."
     # TODO: make this auto-go and extra fast
-    show kate happy
-    k """Ok so right now I'm in three games. 
+    show kate happy at center with move
+    k """{cps=*3}Ok so right now I'm in three games.{nw}
 
-    The character I'm most excited about is named Lady Mara Banefort. 
+    {cps=*3}The character I'm most excited about is named Lady Mara Banefort.{nw}
 
-    In that campaign, we're all Lords and Ladies doing political intrigue type things. 
+    {cps=*3}In that campaign, we're all Lords and Ladies doing political intrigue type things.{nw} 
 
-    Mara is from a real respectable old family, but she has a major secret: she's actually a tiefling and a bastard. 
+    {cps=*3}Mara is from a real respectable old family, but she has a major secret: she's actually a tiefling and a bastard.{nw}
 
-    She was hidden away as a child, and sent off to the Mages' Tower in the hopes that the world would forget about it. 
+    {cps=*3}She was hidden away as a child, and sent off to the Mages' Tower in the hopes that the world would forget about it.{nw}
 
-    Her family refers to her being a tiefling as her \"illness\" or her \"affliction\". 
+    {cps=*3}Her family refers to her being a tiefling as her \"illness\" or her \"affliction\".{nw} 
 
-    Anywayy when her mother, the previous Lady Banefort, died unexpectedly, everyone expected Mara's younger brother Robin to take up the lordship but he was too noble for his own good and sought out Mara from her travels as a bard. 
+    {cps=*3}Anyway when her mother, the previous Lady Banefort, died unexpectedly, everyone expected Mara's younger brother Robin to take up the lordship but he was too noble for his own good and sought out Mara from her travels as a bard.{nw}
 
-    A couple of the party members have figured it out, but if the world at large learns about it, not just Mara's political career, but her entire family's reputation could be at stake.
+    {cps=*3}A couple of the party members have figured it out, but if the world at large learns about it, not just Mara's political career, but her entire family's reputation could be at stake.{nw}
 
-    I've also got this adorable little witch girl named Evie Evergreen. 
+    {cps=*3}I've also got this adorable little witch girl named Evie Evergreen.{nw}
 
-    That game is technically Savage Worlds, not Dungeons and Dragons, so it's a lot more flexible in character creation. My friends and I all decided to be silly and play a party full of children. So Evie is the elf equivalent of a pre-teen. 
+    {cps=*3}That game is technically Savage Worlds, not Dungeons and Dragons, so it's a lot more flexible in character creation. My friends and I all decided to be silly and play a party full of children. So Evie is the elf equivalent of a pre-teen.{nw}
 
-    She ran away from home and was really precocious at the adventurer's guild and gathered herself a band of other unaccompanied minors, and they run around getting themselves into trouble they shouldn't be in.
+    {cps=*3}She ran away from home and was really precocious at the adventurer's guild and gathered herself a band of other unaccompanied minors, and they run around getting themselves into trouble they shouldn't be in.{nw}
 
-    The last character I'm currently playing is a Loxodon Warlock named Lieutenant Pom Brighttusk. 
+    {cps=*3}The last character I'm currently playing is a Loxodon Warlock named Lieutenant Pom Brighttusk.{nw}
 
-    Loxodons are normally rather large elephant people, but because this campaign is set on a world that's entirely islands, the Loxodons are actually like Dwarf-sized. 
+    {cps=*3}Loxodons are normally rather large elephant people, but because this campaign is set on a world that's entirely islands, the Loxodons are actually like Dwarf-sized.{nw}
 
-    Anyway, this character, Pom, found a dragon egg at a rather sketchy market. 
+    {cps=*3}Anyway, this character, Pom, found a dragon egg at a rather sketchy market.{nw}
 
-    The baby in the egg called out to him, so he bought the egg and now he's on leave from the army to raise the dragon as his daughter. 
+    {cps=*3}The baby in the egg called out to him, so he bought the egg and now he's on leave from the army to raise the dragon as his daughter.{nw}
 
-    Tanwen, the dragon, is a very powerful creature even within her egg. She grants Pom all sorts of magical powers - spells, incantations, and most recently, A GIANT SWORD WITH FLAMES ON IT!!!
+    {cps=*3}Tanwen, the dragon, is a very powerful creature even within her egg. She grants Pom all sorts of magical powers - spells, incantations, and most recently, A GIANT SWORD WITH FLAMES ON IT!!!{nw}
 
-    I just left a campaign where I was playing a Tabaxi rogue named Fog-on-the-Water, or Foggy for short.
+    {cps=*3}I just left a campaign where I was playing a Tabaxi rogue named Fog-on-the-Water, or Foggy for short.{nw}
 
-    This frisky feline fellow is an ex-pirate. he only gave it up because his face is incredibly recognizable on wanted posters and nobody wants to hire him for the more discreet type of job any more, which is where his skillset really lies. 
+    {cps=*3}This frisky feline fellow is an ex-pirate. He only gave it up because his face is incredibly recognizable on wanted posters and nobody wants to hire him for the more discreet type of job any more, which is where his skillset really lies.{nw}
 
-    So he's looking to fix up his reputation, doing a few jobs on the right side of the law while satisfying his curiousity for adventure and loot.
+    {cps=*3}So he's looking to fix up his reputation, doing a few jobs on the right side of the law while satisfying his curiousity for adventure and loot.{nw}
 
-    I've played a few other characters over time, like a standard half-orc barbarian named Vola the Skull-Cleaver, a pacifist healer elf who the dice gods once favoured to kick in a door over the real strong guy, and a centaur bard. 
+    {cps=*3}I've played a few other characters over time, like a standard half-orc barbarian named Vola the Skull-Cleaver, a pacifist healer elf who the dice gods once favoured to kick in a door over the real strong guy, and a centaur bard.{nw}
 
-    But my favourite character of all time was the party's grumpy grandma, Sabina the ranger. 
+    {cps=*3}But my favourite character of all time was the party's grumpy grandma, Sabina the ranger.{nw}
 
-    Over the course of two campaigns, Sabina gained a wolf companion named Fayah after the godess of the hunt, met all the kings and governments on her continent, watched her friend Mort die, saved the world, gained the title Lichslayer, became the leader of her ranger corps, got tired of the bureaucracy and went on a new adventure to another continent, found a spaceship at the bottom of a lake, was on the spaceship as her friend Svala raised it to the surface, travelled to another dimension, watched Svala get trapped there and presumably killed by the enemy army, and saved the world again. 
+    {cps=*3}Over the course of two campaigns, Sabina gained a wolf companion named Fayah after the godess of the hunt, met all the kings and governments on her continent, watched her friend Mort die, saved the world, gained the title Lichslayer, became the leader of her ranger corps,{nw}
 
-    (Svala, a cleric, used her last moments of connection with her home plane to teleport out of there, a spell the party didn't know she had. She also had a large diamond from her home plane which she was going to use to revive anyone who died but is now using as a focus of a sort to get herself back home.)"""
+    {cps=*3}...got tired of the bureaucracy and went on a new adventure to another continent, found a spaceship at the bottom of a lake, was on the spaceship as her friend Svala raised it to the surface, travelled to another dimension, watched Svala get trapped there and presumably killed by the enemy army, and saved the world again.{nw}
+
+    {cps=*3}(Svala, a cleric, used her last moments of connection with her home plane to teleport out of there, a spell the party didn't know she had. She also had a large diamond from her home plane which she was going to use to revive anyone who died but is now using as a focus of a sort to get herself back home.){nw}"""
 
     show kate thinking
-    c "{w=1.0}.{w=1.0}.{w=1.0}."
+    c "{cps=*1}{w=1.0}.{w=1.0}.{w=1.0}."
     k "... I told you not to ask."
     c "...Anyway..."
     jump hobbyMenu
 
 label sandbox:
     c "What was volunteering with Sandbox Gaming like?"
-    show kate happy
+    show kate happy at center with move
     k """I had a lot of fun with Sandbox Gaming. 
 
     I started as a simple volunteer, baking cookies for bake sales and hauling TVs. 
@@ -314,6 +336,8 @@ label sandbox:
     I got to see exactly where the money went each year, and meet some of the kids we had helped support. 
 
     It feels good to do good, ya know?"""
+
+    show kate at left with move
     menu:
         "What should I ask them about next?"
         "Their hobbies":
@@ -325,7 +349,7 @@ label sandbox:
 
 label gameJams:
     c "What did you do for the programming competitions?"
-    show kate thinking
+    show kate thinking at center with move
     k """In early 2018, I was part of the Atlantic Engineering Competition. 
 
     A small group of us were given a problem in the morning, and we had to build a solution in one day. I think we were given about 8 hours.  
@@ -341,6 +365,7 @@ label gameJams:
     The second year, I tried it solo and made a game about a mother finding her lost egg."""
     show kate thinking
     k "For both game jams, I used C# and built the games in Unity 3D."
+    show kate at left with move
     menu:
         "What should I ask them about next?"
         "Their hobbies":
@@ -352,7 +377,7 @@ label gameJams:
 
 label jonar:
     c "Why do you want to work with Jonar?"
-    show kate happy
+    show kate happy at center with move
     k """The fact that this is an acceptable way to apply is certainly a pro. 
 
     Like seriously, lots of employers like to say they're a {i}\"fun place to work\"{/i} but with you guys it actually seems true.
@@ -368,6 +393,7 @@ label jonar:
 label somethingElse:
     c "Let's talk about something else."
     k "Ok, what do you wanna talk about?"
+    show kate at left with move
     menu:
         "I should ask them about..."
         "Their work history":
@@ -409,7 +435,7 @@ label credits:
 label contact:
     scene bg room
 
-    show kate happy at left
+    show kate happy with moveinleft
 
     K "You can reach me by phone at (709) 763 1266"
     K "By email at petersonkatec@gmail.com"
