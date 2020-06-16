@@ -264,53 +264,53 @@ label dnd:
     c "Lay it on me."
     # TODO: make this auto-go and extra fast
     show kate happy at center with move
-    k """{cps=*3}Ok so right now I'm in three games.{nw}
+    k """{cps=*3}Ok so right now I'm in three games.{/cps}{nw}
 
-    {cps=*3}The character I'm most excited about is named Lady Mara Banefort.{nw}
+    {cps=*3}The character I'm most excited about is named Lady Mara Banefort.{/cps}{nw}
 
-    {cps=*3}In that campaign, we're all Lords and Ladies doing political intrigue type things.{nw} 
+    {cps=*3}In that campaign, we're all Lords and Ladies doing political intrigue type things.{/cps}{nw} 
 
-    {cps=*3}Mara is from a real respectable old family, but she has a major secret: she's actually a tiefling and a bastard.{nw}
+    {cps=*3}Mara is from a real respectable old family, but she has a major secret: she's actually a tiefling and a bastard.{/cps}{nw}
 
-    {cps=*3}She was hidden away as a child, and sent off to the Mages' Tower in the hopes that the world would forget about it.{nw}
+    {cps=*3}She was hidden away as a child, and sent off to the Mages' Tower in the hopes that the world would forget about it.{/cps}{nw}
 
-    {cps=*3}Her family refers to her being a tiefling as her \"illness\" or her \"affliction\".{nw} 
+    {cps=*3}Her family refers to her being a tiefling as her \"illness\" or her \"affliction\".{/cps}{nw} 
 
-    {cps=*3}Anyway when her mother, the previous Lady Banefort, died unexpectedly, everyone expected Mara's younger brother Robin to take up the lordship but he was too noble for his own good and sought out Mara from her travels as a bard.{nw}
+    {cps=*3}Anyway when her mother, the previous Lady Banefort, died unexpectedly, everyone expected Mara's younger brother Robin to take up the lordship but he was too noble for his own good and sought out Mara from her travels as a bard.{/cps}{nw}
 
-    {cps=*3}A couple of the party members have figured it out, but if the world at large learns about it, not just Mara's political career, but her entire family's reputation could be at stake.{nw}
+    {cps=*3}A couple of the party members have figured it out, but if the world at large learns about it, not just Mara's political career, but her entire family's reputation could be at stake.{/cps}{nw}
 
-    {cps=*3}I've also got this adorable little witch girl named Evie Evergreen.{nw}
+    {cps=*3}I've also got this adorable little witch girl named Evie Evergreen.{/cps}{nw}
 
-    {cps=*3}That game is technically Savage Worlds, not Dungeons and Dragons, so it's a lot more flexible in character creation. My friends and I all decided to be silly and play a party full of children. So Evie is the elf equivalent of a pre-teen.{nw}
+    {cps=*3}That game is technically Savage Worlds, not Dungeons and Dragons, so it's a lot more flexible in character creation. My friends and I all decided to be silly and play a party full of children. So Evie is the elf equivalent of a pre-teen.{/cps}{nw}
 
-    {cps=*3}She ran away from home and was really precocious at the adventurer's guild and gathered herself a band of other unaccompanied minors, and they run around getting themselves into trouble they shouldn't be in.{nw}
+    {cps=*3}She ran away from home and was really precocious at the adventurer's guild and gathered herself a band of other unaccompanied minors, and they run around getting themselves into trouble they shouldn't be in.{/cps}{nw}
 
-    {cps=*3}The last character I'm currently playing is a Loxodon Warlock named Lieutenant Pom Brighttusk.{nw}
+    {cps=*3}The last character I'm currently playing is a Loxodon Warlock named Lieutenant Pom Brighttusk.{/cps}{nw}
 
-    {cps=*3}Loxodons are normally rather large elephant people, but because this campaign is set on a world that's entirely islands, the Loxodons are actually like Dwarf-sized.{nw}
+    {cps=*3}Loxodons are normally rather large elephant people, but because this campaign is set on a world that's entirely islands, the Loxodons are actually like Dwarf-sized.{/cps}{nw}
 
-    {cps=*3}Anyway, this character, Pom, found a dragon egg at a rather sketchy market.{nw}
+    {cps=*3}Anyway, this character, Pom, found a dragon egg at a rather sketchy market.{/cps}{nw}
 
-    {cps=*3}The baby in the egg called out to him, so he bought the egg and now he's on leave from the army to raise the dragon as his daughter.{nw}
+    {cps=*3}The baby in the egg called out to him, so he bought the egg and now he's on leave from the army to raise the dragon as his daughter.{/cps}{nw}
 
-    {cps=*3}Tanwen, the dragon, is a very powerful creature even within her egg. She grants Pom all sorts of magical powers - spells, incantations, and most recently, A GIANT SWORD WITH FLAMES ON IT!!!{nw}
+    {cps=*3}Tanwen, the dragon, is a very powerful creature even within her egg. She grants Pom all sorts of magical powers - spells, incantations, and most recently, A GIANT SWORD WITH FLAMES ON IT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!{/cps}{nw}
 
-    {cps=*3}I just left a campaign where I was playing a Tabaxi rogue named Fog-on-the-Water, or Foggy for short.{nw}
+    {cps=*3}I just left a campaign where I was playing a Tabaxi rogue named Fog-on-the-Water, or Foggy for short.{/cps}{nw}
 
-    {cps=*3}This frisky feline fellow is an ex-pirate. He only gave it up because his face is incredibly recognizable on wanted posters and nobody wants to hire him for the more discreet type of job any more, which is where his skillset really lies.{nw}
+    {cps=*3}This frisky feline fellow is an ex-pirate. He only gave it up because his face is incredibly recognizable on wanted posters and nobody wants to hire him for the more discreet type of job any more, which is where his skillset really lies.{/cps}{nw}
 
-    {cps=*3}So he's looking to fix up his reputation, doing a few jobs on the right side of the law while satisfying his curiousity for adventure and loot.{nw}
+    {cps=*3}So he's looking to fix up his reputation, doing a few jobs on the right side of the law while satisfying his curiousity for adventure and loot.{/cps}{nw}
 
-    {cps=*3}I've played a few other characters over time, like a standard half-orc barbarian named Vola the Skull-Cleaver, a pacifist healer elf who the dice gods once favoured to kick in a door over the real strong guy, and a centaur bard.{nw}
+    {cps=*3}I've played a few other characters over time, like a standard half-orc barbarian named Vola the Skull-Cleaver, a pacifist healer elf who the dice gods once favoured to kick in a door over the real strong guy, and a centaur bard.{/cps}{nw}
 
-    {cps=*3}But my favourite character of all time was the party's grumpy grandma, Sabina the ranger.{nw}
+    {cps=*3}But my favourite character of all time was the party's grumpy grandma, Sabina the ranger.{/cps}{nw}
 
-    {cps=*3}Over the course of two campaigns, Sabina gained a wolf companion named Fayah after the godess of the hunt, met all the kings and governments on her continent, watched her friend Mort die, saved the world, gained the title Lichslayer, became the leader of her ranger corps,{nw}
+    {cps=*3}Over the course of two campaigns, Sabina gained a wolf companion named Fayah after the godess of the hunt, met all the kings and governments on her continent, watched her friend Mort die, saved the world, gained the title Lichslayer, became the leader of her ranger corps,{/cps}{nw}
 
-    {cps=*3}...got tired of the bureaucracy and went on a new adventure to another continent, found a spaceship at the bottom of a lake, was on the spaceship as her friend Svala raised it to the surface, travelled to another dimension, watched Svala get trapped there and presumably killed by the enemy army, and saved the world again.{nw}
+    {cps=*3}...got tired of the bureaucracy and went on a new adventure to another continent, found a spaceship at the bottom of a lake, was on the spaceship as her friend Svala raised it to the surface, travelled to another dimension, watched Svala get trapped and presumably killed by the enemy army, and saved the world again.{/cps}{nw}
 
-    {cps=*3}(Svala, a cleric, used her last moments of connection with her home plane to teleport out of there, a spell the party didn't know she had. She also had a large diamond from her home plane which she was going to use to revive anyone who died but is now using as a focus of a sort to get herself back home.){nw}"""
+    {cps=*3}(Svala, a cleric, used her last moments of connection with her home plane to teleport out of there, a spell the party didn't know she had. She also had a large diamond from her home plane which she was going to use to revive anyone who died but is now using as a focus of a sort to get herself back home.){/cps}{nw}"""
 
     show kate thinking
     c "{cps=*1}{w=1.0}.{w=1.0}.{w=1.0}."
