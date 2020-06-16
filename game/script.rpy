@@ -42,11 +42,12 @@ label work:
     
     The most recent one was with other Ocean Interactive, a game studio.
     
-    Before that, I worked with Wind River Systems building cloud server operating systems.
-    
-    My first two internships were with Altera, who were bought out by Intel while I worked there, testing FPGA chips for telecom."""
+    Before that, I worked with Wind River Systems building cloud server operating systems."""
 
-    show kate happy at left with move
+    show kate happy
+    
+    k "My first two internships were with Altera, who were bought out by Intel while I worked there, testing FPGA chips for telecom."
+    show kate at left with move
     menu:
         k "Which one do you wanna hear more about?"
         "Other Ocean":
@@ -91,9 +92,9 @@ label windRiver:
 
     I wrote test cases in C++, debugged automation scripts in Python and Bash, and did integration work in C++ and Python."""
     show kate thinking
-    k """Unfortunately, when it came to the integration job, the new system had been upgraded so far and gotten so complex that I wasn't able to successfully integrate them in my short time there.
-
-    But it was a really fun challenge and I feel like I got it a lot closer than when it started."""
+    k "Unfortunately, when it came to the integration job, the new system had been upgraded so far and gotten so complex that I wasn't able to successfully integrate them in my short time there."
+    show kate happy
+    k "But it was a really fun challenge and I feel like I got it a lot closer than when it started."
 
     show kate at left with move
     menu:
@@ -111,15 +112,16 @@ label altera:
     show kate happy at center with move
     k """Altera got bought out by Intel during my first term work term with them and they were in the process of integration during my second one.
 
-    So my first internship was at Altera. I was super green, didn't know much about anything just yet!
+    So my first internship was at Altera. I was super green, didn't know much about anything just yet!"""
+    show kate thinking
 
-    I mostly took the daily automated test results, fixed what I could, ran a few additional test when necessary, and passed it on to the more experienced programmers.
+    k """I mostly took the daily automated test results, fixed what I could, ran a few additional test when necessary, and passed it on to the more experienced programmers.
 
     By the time my second internship rolled around, they were officially called Intel and I was more experienced. 
 
     I worked in simulation this time. I built a data frame that the full-timers could use to test FPGA embedded software."""
     
-    show kate at left with move
+    show kate happy at left with move
     menu:
         "What should I ask them about next?"
         "Other Ocean":
@@ -150,7 +152,9 @@ label education:
 label faveClass:
     c "What was your favourite class?"
     show kate thinking at center with move
-    k """My favourite class was probably the swarm robotics class.
+    k "My favourite class was probably{nw}"
+    show kate happy
+    k """My favourite class was probably{fast} the swarm robotics class.
 
     There were too many students and not enough funding to work with {i}actual robots{/i}, so we worked in simulation instead."""
     show kate happy
@@ -190,11 +194,13 @@ label spareTime:
     show kate happy at center with move
     k """I'm so glad you asked!
 
-    As you might guess {nw}"""
+    As you might guess from..."""
     show kate thinking
-    k "As you might guess {fast}from, uh, this, I enjoy {nw}"
+    k """...uh...
+
+    ...this..."""
     show kate happy
-    k """As you might guess from, uh, this, I enjoy {fast}gaming and dabbling in various creative hobbies like music and drawing.
+    k """I enjoy gaming and dabbling in various creative hobbies like music and drawing.
 
     I also like to volunteer. I spent several years volunteering with Sandbox Gaming, raising money for children's charities in St. John's, Newfoundland. I was the treasurer by the end of it! 
 
@@ -317,17 +323,22 @@ label sandbox:
     show kate happy at center with move
     k """I had a lot of fun with Sandbox Gaming. 
 
-    I started as a simple volunteer, baking cookies for bake sales and hauling TVs. 
-
-    Eventually I became a committee member, a board member, and then the Treasurer."""
+    I started as a simple volunteer, baking cookies for bake sales and hauling TVs."""
     show kate thinking
-    k """We had weekly meetings where I met a lot of wonderful people. We held events for the local gaming community in St. John's, which I helped to run. 
+    k "Eventually I became a committee member, a board member, and then the Treasurer."
+    show kate happy
+    k "We had weekly meetings where I met a lot of wonderful people."
+
+    show kate thinking
+    k """We held events for the local gaming community in St. John's, which I helped to run. 
 
     I played in and hosted tournaments for games like MarioKart and Overcooked. 
 
-    We started up a drop-in Dungeons and Dragons league. 
+    We started up a drop-in Dungeons and Dragons league.
 
-    Our biggest events, though, were our online gaming marathons. Twice a year, we'd live stream games for 80 hours straight, taking shifts to play games and host and run the tech.""" 
+    Our biggest events, though, were our online gaming marathons. 
+
+    Twice a year, we'd live stream games for 80 hours straight, taking shifts to play games and host and run the tech.""" 
     show kate happy
     k """We'd raise thousands of dollars every year, and it all went straight to various charities in the city.
 
@@ -408,47 +419,6 @@ label somethingElse:
             jump end
 
 label end:
-    menu:
-        "Contact info":
-            jump contact
-        "Credits":
-            jump credits
-        "Quit":
-            jump thankYou
-
-label credits:
-    scene black
-    with dissolve
-    show text ("{color=#fff}{size=80}Credits\n\n{size=40}Directed by\n{size=60}Kate Peterson\n\n{size=40}Music by\n{size=60}Erik Peterson\n\n{size=40}Produced by\n{size=60}Kate Peterson\n\n{size=40}Character Artist\n{size=60}Ashley Quirke\n\n{size=40}Written by\n{size=60}Kate Peterson\n\n{size=40}Background Artist\n{size=60}Undetermined\n\n{size=40}Programmed by\n{size=60}Kate Peterson\n\n{size=40}Moral support\n{size=60}Erik Peterson"):
-        anchor (0.5, 0.0)
-        pos (0.5, 1.0)
-        linear 30.0 yanchor 1.0 ypos 0.0
-    with Pause(30.0)
-    show text ("{color=#fff}{size=80}Based on a true story: the life of Kate Peterson") at truecenter with dissolve
-    with Pause(3.5)
-    menu:
-        "Contact info":
-            jump contact
-        "Quit":
-            jump thankYou
-
-label contact:
-    scene bg room
-
-    show kate happy with moveinleft
-
-    K "You can reach me by phone at (709) 763 1266"
-    K "By email at petersonkatec@gmail.com"
-    K "Or by carrier pigeon at -"
-    K "Wait, do people still use those?"
-    nvl clear
-    menu:
-        "Credits":
-            jump credits
-        "Quit":
-            jump thankYou
-
-label thankYou:
     c "Thank you for your time."
     show kate happy at center with move
     k """No, thank you! 
@@ -457,4 +427,26 @@ label thankYou:
 
     Bye!"""
     c "Bye!"
+
+    hide kate with dissolve
+
+    show kate happy at right with moveinright
+
+    K "You can reach me by phone at (709) 763 1266"
+    K "By email at petersonkatec@gmail.com"
+    K "Or by carrier pigeon at -"
+    K "Wait, do people still use those?"
+
+    scene black
+    with dissolve
+    #CEO - me, caterer - Erik, lead/assistant programmer - me and me, pigeon tamer - me, correspondance expert - pigeon, chauffeur - Erik, creative consultants - Mara, Pom, Evie, Foggy, Sabina (fade them?)
+    show text ("{color=#fff}{size=80}Credits\n\n{size=40}Directed by\n{size=60}Kate Peterson\n\n{size=40}Music by\n{size=60}Erik Peterson\n\n{size=40}Produced by\n{size=60}Kate Peterson\n\n{size=40}Character Artist\n{size=60}Ashley Quirke\n\n{size=40}Written by\n{size=60}Kate Peterson\n\n{size=40}Background Artist\n{size=60}Undetermined\n\n{size=40}Programmed by\n{size=60}Kate Peterson\n\n{size=40}Moral support\n{size=60}Erik Peterson"):
+        anchor (0.5, 0.0)
+        pos (0.5, 1.0)
+        linear 60.0 yanchor 1.0 ypos 0.0
+    with Pause(60.0)
+    #Special thanks to Mr. Pudge - branch manager, Her Royal Highness Lucky - assistant branch manager
+    show text ("{color=#fff}{size=80}Based on a true story: the life of Kate Peterson") at truecenter with dissolve
+    with Pause(3.5)
+    
 return
