@@ -6,14 +6,15 @@
 define k = Character("Kate")
 define K = Character('Kate', kind=nvl)
 define c = Character("You", color='#508991')
+define q = Character("???", color='#508991')
 
-#TODO: sound
 
 # The game starts here.
 
 label start:
+    play music ["audio/DapperLoop.mp3", "audio/ChipperLoop.mp3"] fadeout 1.0 fadein 1.0 loop
 
-    "???" "...Hello?"
+    q "...Hello?"
 
     scene bg room
 
@@ -441,11 +442,14 @@ label end:
     K "You can reach me by phone at (709) 763 1266"
     K "By email at petersonkatec@gmail.com"
     K "Or by carrier pigeon at -"
+    show kate thinking
     K "Wait, do people still use those?"
+    show kate happy
 
     scene black
     with dissolve
-    show text ("{color=#fff}{size=80}Credits\n\n{size=40}Director\n{size=60}Kate Peterson\n\n{size=40}Caterer\n{size=60}Erik Peterson\n\n{size=40}Producer\n{size=60}Kate Peterson\n\n{size=40}Character Artist\n{size=60}Ashley Quirke\n\n{size=40}Written by\n{size=60}Kate Peterson\n\n{size=40}Background Artist\n{size=60}afiniwind\n\n{size=40}Lead programmer\n{size=60}Kate Peterson\n\n{size=40}Music by\n{size=60}Erik Peterson\n\n{size=40}CEO\n{size=60}Kate Peterson\n\n{size=40}Chauffeur\n{size=60}Erik Peterson\n\n{size=40}Assistant Programmer\n{size=60}Kate Peterson\n\n{size=40}Correspondance expert\n{size=60}Harold J. Pigeon\n\n{size=40}Pigeon Tamer\n{size=60}Kate Peterson\n\n{size=40}Moral Support\n{size=60}Erik Peterson\n\n{size=40}Tech suppport\n{size=60}Kate Peterson\n\n"):
+    play music "audio/Credits.mp3" fadeout 1.0 noloop
+    show text ("{color=#fff}{size=80}Credits\n\n{size=40}Director\n{size=60}Kate Peterson\n\n{size=40}Music by\n{size=60}Erik Peterson\n\n{size=40}Producer\n{size=60}Kate Peterson\n\n{size=40}Character Artist\n{size=60}Ashley Quirke\n\n{size=40}Written by\n{size=60}Kate Peterson\n\n{size=40}Background Artist\n{size=60}afiniwind\n\n{size=40}Lead programmer\n{size=60}Kate Peterson\n\n{size=40}Caterer\n{size=60}Erik Peterson\n\n{size=40}CEO\n{size=60}Kate Peterson\n\n{size=40}Chauffeur\n{size=60}Erik Peterson\n\n{size=40}Assistant Programmer\n{size=60}Kate Peterson\n\n{size=40}Correspondance expert\n{size=60}Harold J. Pigeon\n\n{size=40}Pigeon Tamer\n{size=60}Kate Peterson\n\n{size=40}Moral Support\n{size=60}Erik Peterson\n\n{size=40}Tech suppport\n{size=60}Kate Peterson\n\n"):
         anchor (0.5, 0.0)
         pos (0.5, 1.0)
         linear 60.0 yanchor 1.0 ypos 0.0
