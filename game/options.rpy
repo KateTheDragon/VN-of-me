@@ -29,7 +29,9 @@ define config.version = "1.0"
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
-define gui.about = _p("""A tiny game made by Kate Peterson for an application to Jonar Systems. 
+define gui.about = _p("""A tiny game made by Kate Peterson for an application to Jonar Systems.
+
+Contact: petersonkatec@gmail.com 
 
 Written, programmed, directed, and produced by: Kate Peterson
 
