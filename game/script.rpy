@@ -7,6 +7,8 @@ define k = Character("Kate")
 define K = Character('Kate', kind=nvl)
 define c = Character("You")
 
+#TODO: sound
+
 # The game starts here.
 
 label start:
@@ -262,8 +264,12 @@ label dndWarn:
 
 label dnd:
     c "Lay it on me."
-    # TODO: make this auto-go and extra fast
-    show kate happy at center with move
+    show kate happy at left:
+        linear 0.3 xalign 0.5 ypos 0.9
+        linear 0.3 xalign 0.8 ypos 1.0 #counterclockwise circles 0.5
+        linear 0.3 xalign 0.5 ypos 0.9
+        linear 0.3 xalign 0.2 ypos 1.0 #clockwise circles 0.5
+        repeat
     k """{cps=*3}Ok so right now I'm in three games.{/cps}{nw}
 
     {cps=*3}The character I'm most excited about is named Lady Mara Banefort.{/cps}{nw}
@@ -312,7 +318,7 @@ label dnd:
 
     {cps=*3}(Svala, a cleric, used her last moments of connection with her home plane to teleport out of there, a spell the party didn't know she had. She also had a large diamond from her home plane which she was going to use to revive anyone who died but is now using as a focus of a sort to get herself back home.){/cps}{nw}"""
 
-    show kate thinking
+    show kate thinking at center with move
     c "{cps=*1}{w=1.0}.{w=1.0}.{w=1.0}."
     k "... I told you not to ask."
     c "...Anyway..."
@@ -439,12 +445,12 @@ label end:
 
     scene black
     with dissolve
-    # creative consultants - Mara, Pom, Evie, Foggy, Sabina (fade them?)
     show text ("{color=#fff}{size=80}Credits\n\n{size=40}Director\n{size=60}Kate Peterson\n\n{size=40}Caterer\n{size=60}Erik Peterson\n\n{size=40}Producer\n{size=60}Kate Peterson\n\n{size=40}Character Artist\n{size=60}Ashley Quirke\n\n{size=40}Written by\n{size=60}Kate Peterson\n\n{size=40}Background Artist\n{size=60}afiniwind\n\n{size=40}Lead programmer\n{size=60}Kate Peterson\n\n{size=40}Music by\n{size=60}Erik Peterson\n\n{size=40}CEO\n{size=60}Kate Peterson\n\n{size=40}Chauffeur\n{size=60}Erik Peterson\n\n{size=40}Assistant Programmer\n{size=60}Kate Peterson\n\n{size=40}Correspondance expert\n{size=60}Harold J. Pigeon\n\n{size=40}Pigeon Tamer\n{size=60}Kate Peterson\n\n{size=40}Moral Support\n{size=60}Erik Peterson\n\n{size=40}Tech suppport\n{size=60}Kate Peterson\n\n"):
         anchor (0.5, 0.0)
         pos (0.5, 1.0)
         linear 60.0 yanchor 1.0 ypos 0.0
     with Pause(60.0)
+    # creative consultants - Mara, Pom, Evie, Foggy, Sabina (fade them?)
     #Special thanks to Mr. Pudge - branch manager, Her Royal Highness Lucky - assistant branch manager
     show text ("{color=#fff}{size=80}Based on a true story: the life of Kate Peterson") at truecenter with dissolve
     with Pause(3.5)
