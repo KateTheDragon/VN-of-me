@@ -5,7 +5,7 @@
 
 define k = Character("Kate")
 define K = Character('Kate', kind=nvl)
-define c = Character("You")
+define c = Character("You", color='#508991')
 
 #TODO: sound
 
@@ -266,9 +266,9 @@ label dnd:
     c "Lay it on me."
     show kate happy at left:
         linear 0.3 xalign 0.5 ypos 0.9
-        linear 0.3 xalign 0.8 ypos 1.0 #counterclockwise circles 0.5
+        linear 0.3 xalign 0.8 ypos 1.0
         linear 0.3 xalign 0.5 ypos 0.9
-        linear 0.3 xalign 0.2 ypos 1.0 #clockwise circles 0.5
+        linear 0.3 xalign 0.2 ypos 1.0
         repeat
     k """{cps=*3}Ok so right now I'm in three games.{/cps}{nw}
 
