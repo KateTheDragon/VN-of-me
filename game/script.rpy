@@ -9,7 +9,6 @@ define c = Character("You", color='#508991')
 define q = Character("???", color='#508991')
 define config.menu_include_disabled = True
 #TODO: voice beeps?
-#TODO: close off seen options.
 
 init python:
     workSeen = otherOceanSeen = windRiverSeen = alteraSeen = workComplete = False
@@ -319,7 +318,7 @@ label dndWarn:
 label dnd:
     c "Lay it on me."
 
-    #TODO: get some doublespeed music
+    play music "audio/DapperFast.mp3" loop
     show kate happy at left:
         linear 0.3 xalign 0.5 ypos 0.9
         linear 0.3 xalign 0.8 ypos 1.0
@@ -375,12 +374,15 @@ label dnd:
     {cps=*3}(Svala, a cleric, used her last moments of connection with her home plane to teleport out of there, a spell the party didn't know she had. She also had a large diamond from her home plane which she was going to use to revive anyone who died but is now using as a focus of a sort to get herself back home.){/cps}{nw}"""
 
     $ dndSeen = True
+    stop music
     show kate thinking at center with move
     c "{w=1.0}.{w=1.0}.{w=1.0}."
 
     k "... I told you not to ask."
 
+    play music ["audio/DapperLoop.mp3", "audio/ChipperLoop.mp3"] fadeout 1.0 fadein 1.0 loop
     c "...Anyway..."
+
     jump hobbyMenu
 
 label sandbox:
