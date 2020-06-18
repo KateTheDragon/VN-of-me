@@ -55,7 +55,7 @@ label work:
     show kate thinking at center with move
     k """I've had four internships.
     
-    The most recent one was with other Ocean Interactive, a game studio.
+    The most recent one was with Other Ocean Interactive, a game studio.
     
     Before that, I worked with Wind River Systems building cloud server operating systems."""
 
@@ -257,6 +257,8 @@ label spareTime:
     I've also participated in a few game jams and other programming competitions."""
     
     $ spareTimeSeen = True
+    if (dndSeen and sandboxSeen and gameJamSeen):
+        $ spareTimeComplete = True
     show kate at left with move
     menu:
         "What should I ask them about next?"
@@ -374,6 +376,8 @@ label dnd:
     {cps=*3}(Svala, a cleric, used her last moments of connection with her home plane to teleport out of there, a spell the party didn't know she had. She also had a large diamond from her home plane which she was going to use to revive anyone who died but is now using as a focus of a sort to get herself back home.){/cps}{nw}"""
 
     $ dndSeen = True
+    if (hobbiesSeen and sandboxSeen and gameJamSeen):
+        $ spareTimeComplete = True
     stop music
     show kate thinking at center with move
     c "{w=1.0}.{w=1.0}.{w=1.0}."
@@ -534,15 +538,20 @@ label end:
     scene black
     with dissolve
     play music "audio/Credits.mp3" fadeout 1.0 noloop
-    show text ("{color=#fff}{size=80}Credits\n\n{size=40}Director\n{size=60}Kate Peterson\n\n{size=40}Music by\n{size=60}Erik Peterson\n\n{size=40}Producer\n{size=60}Kate Peterson\n\n{size=40}Character Artist\n{size=60}Ashley Quirke\n\n{size=40}Written by\n{size=60}Kate Peterson\n\n{size=40}Background Artist\n{size=60}afiniwind\n\n{size=40}Lead programmer\n{size=60}Kate Peterson\n\n{size=40}Caterer\n{size=60}Erik Peterson\n\n{size=40}CEO\n{size=60}Kate Peterson\n\n{size=40}Chauffeur\n{size=60}Erik Peterson\n\n{size=40}Assistant Programmer\n{size=60}Kate Peterson\n\n{size=40}Correspondance expert\n{size=60}Harold J. Pigeon\n\n{size=40}Pigeon Tamer\n{size=60}Kate Peterson\n\n{size=40}Moral Support\n{size=60}Erik Peterson\n\n{size=40}Tech suppport\n{size=60}Kate Peterson\n\n"):
+    show text ("{color=#fff}{size=80}Credits\n\n{size=40}Director\n{size=60}Kate Peterson\n\n{size=40}Music by\n{size=60}Erik Peterson\n\n{size=40}Producer\n{size=60}Kate Peterson\n\n{size=40}Character Artist\n{size=60}Ashley Quirke\n\n{size=40}Lead Programmer\n{size=60}Kate Peterson\n\n{size=40}Background Artist\n{size=60}afiniwind\n\n{size=40}Assistant programmer\n{size=60}Kate Peterson\n\n{size=40}Caterer\n{size=60}Erik Peterson\n\n{size=40}Written by\n{size=60}Kate Peterson\n\n{size=40}Moral Support\n{size=60}Erik Peterson\n\n{size=40}Tech suppport\n{size=60}Kate Peterson\n\n{size=40}Chauffeur\n{size=60}Erik Peterson\n\n{size=40}CEO/COO/CTO/CFO/CIO/CSO\n{size=60}Kate Peterson\n\n{size=40}Correspondance expert\n{size=60}Harold J. Pigeon\n\n{size=40}Pigeon Tamer\n{size=60}Kate Peterson\n\n"):
         anchor (0.5, 0.0)
         pos (0.5, 1.0)
-        linear 57.0 yanchor 1.0 ypos 0.0
-    with Pause(60.0)
+        linear 54.0 yanchor 1.0 ypos 0.0
+    with Pause(54.0)
     if dndSeen:
-        show text ("{color=#fff}{size=80}Creative consultants\n{size=40}Lady Mara Banefort\nLieutenant Pom Brighttusk\nEvie Evergreen\nFog-on-the-Water\nVole the Skull-Cleaver\nQuill Cornflowers-in-their-Hair\nThorel Laneth\nFayah\nCaptain Sabina Lichslayer") at truecenter with dissolve
+        show text ("{color=#fff}{size=80}Creative consultants\n{size=40}Lady Mara Banefort\nLieutenant Pom Brighttusk\nEvie Evergreen\nFog-on-the-Water\nVola the Skull-Cleaver\nQuill Cornflowers-in-their-Hair\nThorel Laneth\nFayah\nCaptain Sabina Lichslayer") at truecenter with dissolve
         with Pause(3.0)
-    #Special thanks to Mr. Pudge - branch manager, Her Royal Highness Lucky - assistant branch manager
+    show dogs
+    show text ("{color=#fff}{size=60}Special thanks to\n{size=20}\nBranch Manager\n{size=40}Mr. Pudge\n{size=20}\nAssistant Branch Manager\n{size=40}Her Royal Highness Queen Lucky"):
+        xalign 0.5
+        yalign 0
+    with Pause (3.0)
+    hide dogs
     show text ("{color=#fff}{size=80}Based on a true story: the life of Kate Peterson") at truecenter with dissolve
     with Pause(3.5)
     
