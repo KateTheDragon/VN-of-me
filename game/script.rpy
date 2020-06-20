@@ -7,6 +7,14 @@ define k = Character("Kate")
 define K = Character('Kate', kind=nvl)
 define c = Character("You")
 
+label splashscreen:
+    image white = Solid("#fff")
+    scene white with dissolve
+    show pink sheep at truecenter with dissolve
+    with Pause(2.0)
+    hide pink with dissolve
+return
+
 # The game starts here.
 
 label start:
