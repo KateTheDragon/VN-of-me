@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("VN of me")
+define config.name = _("Kate's Fabulous Adventure")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -39,7 +39,7 @@ Music and moral support by Erik Peterson
 
 Background art by afiniwind
 
-Charaacter art by Ashley Quirke
+Charaacter art by SmashleyDraws
 """)
 
 
@@ -47,7 +47,7 @@ Charaacter art by Ashley Quirke
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "VNofme"
+define build.name = "KatesFabulousAdventure"
 
 
 ## Sounds and music ############################################################
@@ -152,7 +152,7 @@ default preferences.afm_time = 15
 ## This generally should not be changed, and if it is, should always be a
 ## literal string, not an expression.
 
-define config.save_directory = "VNofme-1592097271"
+define config.save_directory = "KatesFabulousAdventure-1592097271"
 
 
 ## Icon ########################################################################
