@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("VN of me")
+define config.name = _("Kate's Fabulous Adventure")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -29,25 +29,17 @@ define config.version = "1.0"
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
-define gui.about = _p("""A tiny game made by Kate Peterson for an application to Jonar Systems. 
+define gui.about = _p("""A tiny game made by Kate Peterson for an application to Jonar Systems.
 
-Directed by: Kate Peterson
+Contact: petersonkatec@gmail.com 
 
-Music by: Erik Peterson
+Written, programmed, directed, and produced by: Kate Peterson
 
-Produced by: Kate Peterson
+Music and moral support by Erik Peterson
 
-Character artist: Ashley Quirke
+Background art by afiniwind
 
-Written by: Kate Peterson
-
-Background artist: Undetermined
-
-Programmed by: Kate Peterson
-
-Moral support: Erik Peterson
-
-Based on a true story: the life of Kate Peterson
+Character art by SmashleyDraws
 """)
 
 
@@ -55,7 +47,7 @@ Based on a true story: the life of Kate Peterson
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "VNofme"
+define build.name = "KatesFabulousAdventure"
 
 
 ## Sounds and music ############################################################
@@ -79,7 +71,7 @@ define config.has_voice = False
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
-define config.main_menu_music = "menu-loop.mp3"
+define config.main_menu_music = "audio/MenuLoop.mp3"
 
 
 ## Transitions #################################################################
@@ -160,7 +152,7 @@ default preferences.afm_time = 15
 ## This generally should not be changed, and if it is, should always be a
 ## literal string, not an expression.
 
-define config.save_directory = "VNofme-1592097271"
+define config.save_directory = "KatesFabulousAdventure-1592097271"
 
 
 ## Icon ########################################################################
