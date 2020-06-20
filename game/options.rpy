@@ -39,7 +39,7 @@ Music and moral support by Erik Peterson
 
 Background art by afiniwind
 
-Charaacter art by SmashleyDraws
+Character art by SmashleyDraws
 """)
 
 

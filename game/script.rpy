@@ -546,12 +546,12 @@ label end:
     if dndSeen:
         show text ("{color=#fff}{size=80}Creative consultants\n{size=40}Lady Mara Banefort\nLieutenant Pom Brighttusk\nEvie Evergreen\nFog-on-the-Water\nVola the Skull-Cleaver\nQuill Cornflowers-in-their-Hair\nThorel Laneth\nFayah\nCaptain Sabina Lichslayer") at truecenter with dissolve
         with Pause(3.0)
-    show dogs
-    show text ("{color=#fff}{size=60}Special thanks to\n{size=40}\nBranch Manager\n{size=60}Mr. Pudge\n{size=40}\nAssistant Branch Manager\n{size=60}Her Royal Highness Queen Lucky"):
+    show stick pic
+    show text ("{color=#fff}{size=60}Special thanks to\n{size=40}\nBranch Manager\n{size=60}Her Royal Highness Queen Lucky\n{size=40}\nAssistant Branch Manager\n{size=60}Mr. Pudge"):
         xalign 0.5
-        yalign 0
-    with Pause (3.0)
-    hide dogs
+        yalign 0.1
+    with Pause (5.0)
+    hide stick pic
     show text ("{color=#fff}{size=80}Based on a true story: the life of Kate Peterson") at truecenter with dissolve
     with Pause(3.5)
     
